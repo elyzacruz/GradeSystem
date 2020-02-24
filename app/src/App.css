@@ -1,0 +1,116 @@
+@import '~antd/dist/antd.css';
+
+.upload-button-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.upload-button-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+#id-upload-grades {
+  display: grid;
+}
+
+#id-upload-grades .ant-btn {
+  margin: 5px 0;
+}
+
+button {
+  padding: 10px;
+}
+
+.ant-table {
+  font-size: 13px !important;
+}
+
+.ant-table-title {
+  font-weight: bold;
+}
+
+.ant-table-thead > tr > th, .ant-table-tbody > tr > td {
+  padding: 1px;
+}
+
+.student-list-info{
+  display: inline-flex  ;
+}
+
+.student-list-info > .ant-descriptions{
+  width: 50%;
+  margin-left: 50px;
+}
+
+.upload-div {
+  margin-top: 10px;
+  display: flex;
+}
+
+ul{
+  list-style-type:none;
+  padding: 0;
+}
+
+.student-list-info > div > label{
+  margin-left: 15px;
+}
+
+.ant-divider-horizontal {
+  margin: 15px 0;
+}
+
+.upload-def > label:first-child {
+  font-weight: bold;
+}
+
+#id-file > div > button {
+  float: right;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.submit-grades{
+  display: flex;
+}
+
+.ant-alert-close-icon {
+  top: 5px;
+}
+
+.ant-alert-message {
+  font-size: 12px;
+}
+
+.ant-alert.ant-alert-no-icon {
+  padding: 3px 30px 3px 13px;
+  margin-left: 10px;
+}
+
+.upload-form{
+  margin-left: 60px;
+  background-color: '#ffffff';
+}
+
+.student-list-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.layout {
+  background-color:#F5F8DE;
+}
+
+h1 { color: '#ffffff' }
+
+.layoutContent {
+  background: '#ffffff'; padding: '0 50px';
+}

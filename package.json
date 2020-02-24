@@ -1,0 +1,15 @@
+{
+  "name": "gradesystemapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "app": "concurrently \"cd backend && nodemon server.js\" \"cd app && npm start\""
+  },
+  "author": "Elyza Cruz",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.1.0"
+  }
+}
