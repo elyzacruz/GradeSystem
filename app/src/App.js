@@ -95,20 +95,24 @@ class App extends Component {
   };
 
   fetchQuarterData = async item => {
+    const { selectedYear, selectedQtr } = this.state;
     const { key: qtr, item: { props: { parentMenu: parent } } } = item;
     const { props: { title: year } } = parent;
-    try {
-      const data = await fetchGrades({
-        year,
-        quarter: qtr
-      });
-      this.setState({
-        grades: data.grades,
-        selectedQtr: data.quarter,
-        selectedYear: data.year
-      });
-    } catch (e) {
-      console.log(e);
+
+    if(selectedYear !== year || selectedQtr !== qtr){
+      try {
+        const data = await fetchGrades({
+          year,
+          quarter: qtr
+        });
+        this.setState({
+          grades: data.grades,
+          selectedQtr: data.quarter,
+          selectedYear: data.year
+        });
+      } catch (e) {
+        console.log(e);
+      }
     }
   }
 
